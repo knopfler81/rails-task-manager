@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3 task-form">
+    <%= form_for @task do |f|%>
+      <%= f.label :name  %>
+      <%= f.text_field :name, class:"form-control" %>
+      <%= f.label :description %>
+      <%= f.text_area :description, rows: "5",class:"form-control"  %>
+      <%= f.submit class:"btn btn-success form-control form-btn" %>
+    <% end %>
+  </div>
+</div>
+

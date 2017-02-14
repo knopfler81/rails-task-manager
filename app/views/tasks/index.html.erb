@@ -1,0 +1,9 @@
+<div class="row">
+ <h1 class="text-center"> Liste des taches</h1>
+  <div class="col-sm-6 col-sm-offset-3 list-task">
+    <% @tasks.each do |task| %>
+      <h3><%= task.name %></h3>
+      <%=link_to "See task",task_path(task), class:"btn btn-success btn-sm"  %>
+    <% end %>
+  </div>
+</div>
